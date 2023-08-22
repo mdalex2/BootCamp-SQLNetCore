@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+<Node Id="IModel" Label="AppDBContext" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" PropertyAccessMode="PropertyAccessMode.Default" ProductVersion="7.0.10" Annotations="BaseTypeDiscoveryConvention:DerivedTypes: System.Collections.Generic.Dictionary`2[System.Type,System.Collections.Generic.List`1[Microsoft.EntityFrameworkCore.Metadata.IConventionEntityType]]
+Relational:MaxIdentifierLength: 128
+RelationshipDiscoveryConvention:InverseNavigationCandidates: System.Collections.Generic.Dictionary`2[System.Type,System.Collections.Generic.SortedSet`1[System.Type]]
+SqlServer:ValueGenerationStrategy: IdentityColumn" Category="Model" Group="Expanded" />
+<Node Id = "Autor" Label="Autor" Name="Autor" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: Autor
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "AutorLibro" Label="AutorLibro" Name="AutorLibro" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: AutorLibro
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "Autor.Id" Label="Id (int)" Name="Id" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: AutorId
+SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Autor.AutorLibros" Label="AutorLibros (*)" Name="AutorLibros" Category="Navigation Collection" Type="List&lt;AutorLibro&gt;"  Field="" Dependent="AutorLibro" Principal="" Inverse="Autor" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Autor.Nombre" Label="Nombre (string)" Name="Nombre" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Autor.WebUrl" Label="WebUrl (string)" Name="WebUrl" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "CategoriaLibro" Label="CategoriaLibro" Name="CategoriaLibro" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: CategoriaLibro
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "AutorLibro.Id" Label="Id (long)" Name="Id" Category="Property Primary" Type="long" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: AutorLibroId
+SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "AutorLibro.Autor" Label="Autor (1)" Name="Autor" Category="Navigation Property" Type="Autor"  Field="" Dependent="" Principal="Autor" Inverse="AutorLibros" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "AutorLibro.Libro" Label="Libro (1)" Name="Libro" Category="Navigation Property" Type="Libro"  Field="" Dependent="" Principal="Libro" Inverse="LibrosAutores" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "AutorLibro.AutorId" Label="AutorId (int)" Name="AutorId" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "AutorLibro.LibroId" Label="LibroId (long)" Name="LibroId" Category="Property Foreign" Type="long" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "AutorLibro.Orden" Label="Orden (long)" Name="Orden" Category="Property Required" Type="long" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Libro" Label="Libro" Name="Libro" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: Libro
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "CategoriaLibro.Id" Label="Id (int)" Name="Id" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: CategoriaLibroId
+SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "CategoriaLibro.Libros" Label="Libros (*)" Name="Libros" Category="Navigation Collection" Type="List&lt;Libro&gt;"  Field="" Dependent="Libro" Principal="" Inverse="CategoriaLibro" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "CategoriaLibro.Nombre" Label="Nombre (string)" Name="Nombre" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "PrecioOferta" Label="PrecioOferta" Name="PrecioOferta" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: PrecioOferta
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "Libro.Id" Label="Id (long)" Name="Id" Category="Property Primary" Type="long" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: LibroId
+SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Libro.CategoriaLibro" Label="CategoriaLibro (1)" Name="CategoriaLibro" Category="Navigation Property" Type="CategoriaLibro"  Field="" Dependent="" Principal="CategoriaLibro" Inverse="Libros" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Libro.LibrosAutores" Label="LibrosAutores (*)" Name="LibrosAutores" Category="Navigation Collection" Type="List&lt;AutorLibro&gt;"  Field="" Dependent="AutorLibro" Principal="" Inverse="Libro" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Libro.PrecioOferta" Label="PrecioOferta (1)" Name="PrecioOferta" Category="Navigation Property" Type="PrecioOferta"  Field="" Dependent="PrecioOferta" Principal="" Inverse="Libro" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Libro.Reviews" Label="Reviews (*)" Name="Reviews" Category="Navigation Collection" Type="List&lt;Reviews&gt;"  Field="" Dependent="Reviews" Principal="" Inverse="Libro" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Libro.Activo" Label="Activo (bool)" Name="Activo" Category="Property Required" Type="bool" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Libro.CategoriaLibroId" Label="CategoriaLibroId (int)" Name="CategoriaLibroId" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Libro.Descripcion" Label="Descripcion (string)" Name="Descripcion" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Libro.FechaPublicado" Label="FechaPublicado (DateTime)" Name="FechaPublicado" Category="Property Required" Type="DateTime" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Libro.ImagenUrl" Label="ImagenUrl (string)" Name="ImagenUrl" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Libro.Precio" Label="Precio (decimal)" Name="Precio" Category="Property Required" Type="decimal" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Libro.Titulo" Label="Titulo (string)" Name="Titulo" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Reviews" Label="Reviews" Name="Reviews" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "PrecioOferta.Id" Label="Id (long)" Name="Id" Category="Property Primary" Type="long" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: PrecioOfertaId
+SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "PrecioOferta.Libro" Label="Libro (1)" Name="Libro" Category="Navigation Property" Type="Libro"  Field="" Dependent="" Principal="Libro" Inverse="PrecioOferta" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "PrecioOferta.LibroId" Label="LibroId (long)" Name="LibroId" Category="Property Foreign" Type="long" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "PrecioOferta.NuevoPrecio" Label="NuevoPrecio (decimal)" Name="NuevoPrecio" Category="Property Required" Type="decimal" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "PrecioOferta.TextoPromocional" Label="TextoPromocional (string)" Name="TextoPromocional" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Reviews" Label="Reviews" Name="Reviews" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="" Category="EntityType" Group="Expanded" />
+<Node Id = "Reviews.Id" Label="Id (long)" Name="Id" Category="Property Primary" Type="long" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: ReviewId
+SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Reviews.Libro" Label="Libro (1)" Name="Libro" Category="Navigation Property" Type="Libro"  Field="" Dependent="" Principal="Libro" Inverse="Reviews" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Reviews.Comentario" Label="Comentario (string)" Name="Comentario" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Reviews.LibroId" Label="LibroId (long)" Name="LibroId" Category="Property Foreign" Type="long" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Reviews.NombreVotante" Label="NombreVotante (string)" Name="NombreVotante" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Reviews.NroEstrellas" Label="NroEstrellas (int)" Name="NroEstrellas" Category="Property Required" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+  </Nodes>
+  <Links>
+<Link Source = "IModel" Target="Autor" Category="Contains" />
+<Link Source = "IModel" Target="AutorLibro" Category="Contains" />
+<Link Source = "Autor" Target="Autor.AutorLibros" Category="Contains" />
+<Link Source = "Autor" Target="Autor.Id" Category="Contains" />
+<Link Source = "Autor" Target="Autor.Nombre" Category="Contains" />
+<Link Source = "Autor" Target="Autor.WebUrl" Category="Contains" />
+<Link Source = "IModel" Target="CategoriaLibro" Category="Contains" />
+<Link Source = "AutorLibro" Target="AutorLibro.Autor" Category="Contains" />
+<Link Source = "AutorLibro" Target="AutorLibro.Libro" Category="Contains" />
+<Link Source = "AutorLibro" Target="AutorLibro.Id" Category="Contains" />
+<Link Source="AutorLibro" Target="Autor" From="AutorLibro.AutorId" To="Autor.Id" Name="AutorLibro -> Autor" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="AutorLibro" Target="Libro" From="AutorLibro.LibroId" To="Libro.Id" Name="AutorLibro -> Libro" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "AutorLibro" Target="AutorLibro.AutorId" Category="Contains" />
+<Link Source = "AutorLibro" Target="AutorLibro.LibroId" Category="Contains" />
+<Link Source = "AutorLibro" Target="AutorLibro.Orden" Category="Contains" />
+<Link Source = "IModel" Target="Libro" Category="Contains" />
+<Link Source = "CategoriaLibro" Target="CategoriaLibro.Libros" Category="Contains" />
+<Link Source = "CategoriaLibro" Target="CategoriaLibro.Id" Category="Contains" />
+<Link Source = "CategoriaLibro" Target="CategoriaLibro.Nombre" Category="Contains" />
+<Link Source = "IModel" Target="PrecioOferta" Category="Contains" />
+<Link Source = "Libro" Target="Libro.CategoriaLibro" Category="Contains" />
+<Link Source = "Libro" Target="Libro.LibrosAutores" Category="Contains" />
+<Link Source = "Libro" Target="Libro.PrecioOferta" Category="Contains" />
+<Link Source = "Libro" Target="Libro.Reviews" Category="Contains" />
+<Link Source = "Libro" Target="Libro.Id" Category="Contains" />
+<Link Source="Libro" Target="CategoriaLibro" From="Libro.CategoriaLibroId" To="CategoriaLibro.Id" Name="Libro -> CategoriaLibro" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Libro" Target="Libro.Activo" Category="Contains" />
+<Link Source = "Libro" Target="Libro.CategoriaLibroId" Category="Contains" />
+<Link Source = "Libro" Target="Libro.Descripcion" Category="Contains" />
+<Link Source = "Libro" Target="Libro.FechaPublicado" Category="Contains" />
+<Link Source = "Libro" Target="Libro.ImagenUrl" Category="Contains" />
+<Link Source = "Libro" Target="Libro.Precio" Category="Contains" />
+<Link Source = "Libro" Target="Libro.Titulo" Category="Contains" />
+<Link Source = "IModel" Target="Reviews" Category="Contains" />
+<Link Source = "PrecioOferta" Target="PrecioOferta.Libro" Category="Contains" />
+<Link Source = "PrecioOferta" Target="PrecioOferta.Id" Category="Contains" />
+<Link Source="PrecioOferta" Target="Libro" From="PrecioOferta.LibroId" To="Libro.Id" Name="PrecioOferta -> Libro" Annotations="" IsUnique="True" Label="1:1" Category="Foreign Key" />
+<Link Source = "PrecioOferta" Target="PrecioOferta.LibroId" Category="Contains" />
+<Link Source = "PrecioOferta" Target="PrecioOferta.NuevoPrecio" Category="Contains" />
+<Link Source = "PrecioOferta" Target="PrecioOferta.TextoPromocional" Category="Contains" />
+<Link Source = "IModel" Target="Reviews" Category="Contains" />
+<Link Source = "Reviews" Target="Reviews.Libro" Category="Contains" />
+<Link Source = "Reviews" Target="Reviews.Id" Category="Contains" />
+<Link Source="Reviews" Target="Libro" From="Reviews.LibroId" To="Libro.Id" Name="Reviews -> Libro" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Reviews" Target="Reviews.Comentario" Category="Contains" />
+<Link Source = "Reviews" Target="Reviews.LibroId" Category="Contains" />
+<Link Source = "Reviews" Target="Reviews.NombreVotante" Category="Contains" />
+<Link Source = "Reviews" Target="Reviews.NroEstrellas" Category="Contains" />
+  </Links>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="EntityType" ValueLabel="True">
+      <Condition Expression="HasCategory('EntityType')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Primary" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Primary')" />
+      <Setter Property="Background" Value="#FF008000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Optional" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Optional')" />
+      <Setter Property="Background" Value="#FF808040" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Foreign" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Foreign')" />
+      <Setter Property="Background" Value="#FF8080FF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Required" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Required')" />
+      <Setter Property="Background" Value="#FFC0A000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Property" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Property')" />
+      <Setter Property="Background" Value="#FF990000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Collection" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Collection')" />
+      <Setter Property="Background" Value="#FFFF3232" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Model" ValueLabel="True">
+      <Condition Expression="HasCategory('Model')" />
+      <Setter Property="Background" Value="#FFFFFFFF" />
+    </Style>
+  </Styles>
+  <Properties>
+    <Property Id="Name" Group="Model Properties" DataType="System.String" />
+    <Property Id="Field"  Description="Backing field" Group="Model Properties" DataType="System.String" />
+    <Property Id="Type"  Description="CLR data type" Group="Model Properties" DataType="System.String" />
+    <Property Id="To" Description="Source property" Group="Model Properties" DataType="System.String" />
+    <Property Id="From" Description="Target property" Group="Model Properties" DataType="System.String" />
+    <Property Id="Dependent" Description="Dependent entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="Inverse" Description="Inverse entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="Principal" Description="Principal entity" Group="Model Properties" DataType="System.String" />    
+    <Property Id="Annotations" Description="Annotations" Group="Model Properties" DataType="System.String" />
+    <Property Id="BaseClass"  Description="Base class" Group="Model Properties" DataType="System.String" />
+    <Property Id="ChangeTrackingStrategy" Description="Change tracking strategy" Group="Model Properties" DataType="System.String" />
+    <Property Id="IsUnique" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="IsAbstract" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="ProductVersion" Label="Product Version" Description="EF Core product version" Group="Model Properties" DataType="System.String" />
+    <Property Id="IsIndexed" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsRequired" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsPrimaryKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsForeignKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsShadow" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsAlternateKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsConcurrencyToken" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsIndexed" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsUnicode" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="ValueGenerated" Group="Property Flags" DataType="System.String" />
+    <Property Id="BeforeSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="AfterSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="PropertyAccessMode" Group="Property Flags" DataType="System.String" />
+  </Properties>
+</DirectedGraph>

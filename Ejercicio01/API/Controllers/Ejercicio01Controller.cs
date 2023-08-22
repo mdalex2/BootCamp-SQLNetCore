@@ -17,16 +17,16 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<List<CategoriaPlato>>GetCategorias()
+        public async Task<ActionResult<List<CategoriaPlato>>>GetCategorias()
         {
             var lista = await _db.CategoriaPlato.ToListAsync();
-            return lista;
+            return Ok(lista);
         }
         [HttpGet]
-        public async Task<List<Plato>> GetPlatos()
+        public async Task<ActionResult<List<Plato>>> GetPlatos()
         {
             var lista = await _db.Plato.Include(c => c.CategoriaPlato).ToListAsync();
-            return lista;
+            return Ok(lista);
         }
     }
 }
