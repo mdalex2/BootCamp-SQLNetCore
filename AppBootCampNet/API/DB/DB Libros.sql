@@ -2,7 +2,7 @@ USE MASTER
 GO
 IF EXISTS (SELECT * FROM sysdatabases WHERE (name = 'Libros')) 
 BEGIN
-	PRINT 'LA BASE DE DATOS EXISTE SE BORRARï¿½ Y CRERï¿½ UNA NUEVA...'
+	PRINT 'LA BASE DE DATOS EXISTE SE BORRARÁ Y CREARÁ UNA NUEVA...'
 	alter database Libros set single_user with rollback immediate
 	DROP DATABASE Libros;
 END
@@ -18,9 +18,9 @@ END
 
 		INSERT INTO CategoriaLibro (Nombre) Values
 		('Cientificos'),
-		('Didï¿½cticos'),
-		('Tï¿½cnicos'),
-		('Programaciï¿½n'),
+		('Didácticos'),
+		('Técnicos'),
+		('Programación'),
 		('Infantiles');
 	--GO
 
@@ -37,10 +37,10 @@ END
 	--GO
 
 	Insert into Libro (Titulo,Descripcion,FechaPublicado,ImagenUrl,Precio,CategoriaLibroId) Values 
-		('El Origen de las Especies','Libro de evoluciï¿½n','1850-01-01','',30,1),
+		('El Origen de las Especies','Libro de evolución','1850-01-01','',30,1),
 		('Breve Historia del Tiempo','Historia del tiempo',getdate(),'',25.50,1),
 		('La profundidad del Mar','Inmersiones submarinas','1850-01-01','',60,1),
-		('Clean Code','Buenas prï¿½cticas de programaciï¿½n',getdate(),'',45.80,4),
+		('Clean Code','Buenas prácticas de programación',getdate(),'',45.80,4),
 		('El Principito','Cuentos y fabulas infantiles',getdate(),'',10,5)
 	--GO
 
@@ -205,7 +205,7 @@ END
 	GO
 	EXECUTE LibrosPublicadosRango 1800,2023
 	GO
-	exec CambioPrecioCategoria 1,20,"Descuento para categorï¿½a 1 20%"
+	exec CambioPrecioCategoria 1,20,"Descuento para categoría 1 20%"
 	GO
 	Select * from PrecioOferta
 	GO
