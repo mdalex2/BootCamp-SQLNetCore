@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NblEmNuxgL/BouJTSS6Z+Nkz8ZTYnJbkXh7o/cJW+eVfF80IN7NO27wMNA6VQXgCVSvfK8nW48s9k5OqiPD/4A==",
+  "dgSpecHash": "8wp6M7WQPYVAzISwoQW/QBQ239ZTFaB3Vdc3K5BCRUnmk64ZUBrPU55Y6v+Ial8cV6y5seXFjA97M34/fMAPPw==",
   "success": true,
   "projectFilePath": "C:\\ProyectosNET\\BootCamp-SQLNetCore\\AppBootCampNet\\API\\API.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,7 @@
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.10\\microsoft.entityframeworkcore.analyzers.7.0.10.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.10\\microsoft.entityframeworkcore.design.7.0.10.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.10\\microsoft.entityframeworkcore.relational.7.0.10.nupkg.sha512",
-    "C:\\Users\\Alex\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.9\\microsoft.entityframeworkcore.sqlserver.7.0.9.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.10\\microsoft.entityframeworkcore.sqlserver.7.0.10.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
