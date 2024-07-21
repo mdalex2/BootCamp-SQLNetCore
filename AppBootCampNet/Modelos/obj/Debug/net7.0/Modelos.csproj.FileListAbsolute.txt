@@ -46,3 +46,15 @@ C:\Users\mdale\OneDrive\Documents\BootCamp SQL NET Core\AppBootCampNet\Modelos\o
 C:\Users\mdale\OneDrive\Documents\BootCamp SQL NET Core\AppBootCampNet\Modelos\obj\Debug\net7.0\refint\Modelos.dll
 C:\Users\mdale\OneDrive\Documents\BootCamp SQL NET Core\AppBootCampNet\Modelos\obj\Debug\net7.0\Modelos.pdb
 C:\Users\mdale\OneDrive\Documents\BootCamp SQL NET Core\AppBootCampNet\Modelos\obj\Debug\net7.0\ref\Modelos.dll
+C:\ProyectosNET\BootCamp-SQLNetCore\AppBootCampNet\Modelos\bin\Debug\net7.0\Modelos.deps.json
+C:\ProyectosNET\BootCamp-SQLNetCore\AppBootCampNet\Modelos\bin\Debug\net7.0\Modelos.dll
+C:\ProyectosNET\BootCamp-SQLNetCore\AppBootCampNet\Modelos\bin\Debug\net7.0\Modelos.pdb
+C:\ProyectosNET\BootCamp-SQLNetCore\AppBootCampNet\Modelos\obj\Debug\net7.0\Modelos.csproj.AssemblyReference.cache
+C:\ProyectosNET\BootCamp-SQLNetCore\AppBootCampNet\Modelos\obj\Debug\net7.0\Modelos.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProyectosNET\BootCamp-SQLNetCore\AppBootCampNet\Modelos\obj\Debug\net7.0\Modelos.AssemblyInfoInputs.cache
+C:\ProyectosNET\BootCamp-SQLNetCore\AppBootCampNet\Modelos\obj\Debug\net7.0\Modelos.AssemblyInfo.cs
+C:\ProyectosNET\BootCamp-SQLNetCore\AppBootCampNet\Modelos\obj\Debug\net7.0\Modelos.csproj.CoreCompileInputs.cache
+C:\ProyectosNET\BootCamp-SQLNetCore\AppBootCampNet\Modelos\obj\Debug\net7.0\Modelos.dll
+C:\ProyectosNET\BootCamp-SQLNetCore\AppBootCampNet\Modelos\obj\Debug\net7.0\refint\Modelos.dll
+C:\ProyectosNET\BootCamp-SQLNetCore\AppBootCampNet\Modelos\obj\Debug\net7.0\Modelos.pdb
+C:\ProyectosNET\BootCamp-SQLNetCore\AppBootCampNet\Modelos\obj\Debug\net7.0\ref\Modelos.dll
